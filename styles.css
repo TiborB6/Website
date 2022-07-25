@@ -1,0 +1,132 @@
+/*Master Syles*/
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*Navbar Styles*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.navbar > .left-side > div{
+    margin-right: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.navbar-link{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navbar-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navbar-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.navbar-link a:hover{
+    color: black;    
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+
+/*Portfolio styles*/
+
+.portfolio-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-img-text{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.portfolio-img-text .subtitle{
+    transition: 2s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.portfolio-img-text:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-brighten{
+    transition: 1s;
+    filter: brightness(100%)
+}
+
+/*About page*/
+
+.two-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image img{
+    width: 100%;
+}
+
+.profile-content{
+    padding: 32px;
+}
+
+.profile-content h1{
+    font-size: 32 pt;
+    color: lightseagreen;
+}
